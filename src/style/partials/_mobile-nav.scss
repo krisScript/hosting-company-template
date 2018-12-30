@@ -1,0 +1,41 @@
+.nav--mobile {
+  display: none;
+  &--active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: $white;
+    width: 100vw;
+    animation: drop ease-in-out 400ms;
+    animation-fill-mode: forwards;
+    z-index: 2;
+    @keyframes drop {
+      from {
+        opacity: 0;
+        transform: translateY(-40vh);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(9.5vh);
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    list-style: none;
+    width: 100%;
+    &__item {
+      padding: 1.3rem;
+      text-align: center;
+      a {
+        font-size: 1rem;
+        color: $primary;
+        text-decoration: none;
+      }
+    }
+  }
+}

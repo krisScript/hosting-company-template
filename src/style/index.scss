@@ -1,0 +1,37 @@
+@import 'vendor/normalize';
+@import 'modules/variables';
+@import 'modules/mixins';
+@import 'modules/media-queries';
+@import 'partials/header';
+@import 'partials/mobile-nav';
+@import 'partials/landing-section';
+@import 'partials/button';
+@import 'partials/domains-section';
+@import 'partials/services-section';
+@import 'partials/cards-container';
+@import 'partials/card';
+@import 'partials/stats-section';
+@import 'partials/pricing-plans-section';
+@import 'partials/testemonials-section';
+@import 'partials/carousel';
+@import 'partials/faq-section';
+@import 'partials/footer';
+@import 'partials/slide';
+@import 'partials/section';
+@import 'partials/about-section';
+@import 'partials/team-section';
+@import 'partials/form';
+@import 'partials/post';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-size: 10px;
+    color: $dark;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}

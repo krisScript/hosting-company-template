@@ -1,0 +1,25 @@
+.button {
+  border: none;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  font-size: 1rem;
+  color: $white;
+  border: solid 2px $primary;
+  background: $primary;
+  transition: 200ms;
+  cursor: pointer;
+  @include medium-screen {
+    font-size: 1rem;
+    padding: 0.6rem 1.3rem 0.6rem 1.3rem;
+  }
+  &:hover {
+    background: lighten($primary, 5%);
+  }
+  &--transparent {
+    background: transparent;
+    border: solid 2px $white;
+    &:hover {
+      background: $white;
+      color: $dark;
+    }
+  }
+}

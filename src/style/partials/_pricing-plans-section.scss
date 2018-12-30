@@ -1,0 +1,6 @@
+.pricing--plans--section{
+    background: $light;
+    @include large-screen{
+        height: 100vh;
+    }
+}

@@ -1,0 +1,5 @@
+.testemonials--section{
+    @include large-screen{
+        height:70vh;
+    }
+}

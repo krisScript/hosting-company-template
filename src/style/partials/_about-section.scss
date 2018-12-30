@@ -1,0 +1,5 @@
+.about--section{
+    @include large-screen{
+        height: 50vw;
+    }
+}

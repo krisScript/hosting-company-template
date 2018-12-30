@@ -1,0 +1,32 @@
+.faq--section {
+  background: $light;
+  &__questions--contianer {
+    @include flex-center;
+    justify-content: flex-start;
+    flex-flow: column;
+    width: 100%;
+  }
+  &__question {
+    width: 100%;
+    background: $white;
+    color: $dark;
+    padding: 1rem;
+    margin: 0.3rem;
+    @include large-screen {
+      width: 80%;
+    }
+    &__summary {
+      font-size: 1.2rem;
+      width: 100%;
+      padding: 0.4rem;
+      cursor: pointer;
+    }
+    &__text {
+      padding: 1rem;
+      text-align: center;
+      font-size: 1rem;
+      width: 100%;
+      background: $light;
+    }
+  }
+}

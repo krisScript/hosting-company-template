@@ -1,0 +1,8 @@
+.services--section{
+   background: $light;
+ 
+   @include large-screen{
+      height: 95vh;
+      justify-content: center;
+   }
+}
