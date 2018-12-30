@@ -4,8 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./src/style/index.scss" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./src/assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./src/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./src/assets/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./src/assets/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
@@ -28,13 +55,13 @@
       /></a>
       <nav class="header__nav">
         <ul class="header__nav__list">
-          <li class="header__nav__list__item  "><a href="">Home</a></li>
+          <li class="header__nav__list__item  "><a class="active " href="">Home</a></li>
           <li class="header__nav__list__item">
-            <a href="./about.html">About Us</a>
+            <a  href="./about.html">About Us</a>
           </li>
 
           <li class="header__nav__list__item">
-            <a href="./contact.html">Contact</a>
+            <a  href="./contact.html">Contact</a>
           </li>
         </ul>
       </nav>
@@ -46,7 +73,7 @@
     </header>
     <nav class="nav--mobile">
       <ul class="nav--mobile__list">
-        <li class="nav--mobile__list__item"><a href="">Home</a></li>
+        <li class="nav--mobile__list__item"><a class="active"href="">Home</a></li>
         <li class="nav--mobile__list__item">
           <a href="./about.html">About Us</a>
         </li>
@@ -144,26 +171,24 @@
         </div>
         <div class="card card--transparent card--small ">
           <h3 class="card__title card__title--white card__title--large ">
-            2000
+            7000
+          </h3>
+          <p class="card__text card__text--white card__text--large">Users</p>
+        </div>
+        <div class="card card--transparent card--small ">
+          <h3 class="card__title card__title--white card__title--large ">
+            750
           </h3>
           <p class="card__text card__text--white card__text--large">
-            CMS Instalations
+            Questions answered
           </p>
         </div>
         <div class="card card--transparent card--small ">
           <h3 class="card__title card__title--white card__title--large ">
-            2000
+            350
           </h3>
           <p class="card__text card__text--white card__text--large">
-            CMS Instalations
-          </p>
-        </div>
-        <div class="card card--transparent card--small ">
-          <h3 class="card__title card__title--white card__title--large ">
-            2000
-          </h3>
-          <p class="card__text card__text--white card__text--large">
-            CMS Instalations
+            New users last month
           </p>
         </div>
       </div>
@@ -180,9 +205,9 @@
               Basic
             </h3>
           </div>
-          <h3 class="card__title card--pricing__title">$20/ month</h3>
+          <h3 class="card__title card--pricing__title">$10/ month</h3>
           <ul class="card--pricing__list">
-            <li class="card--pricing__list__item">20 GBBandwith</li>
+            <li class="card--pricing__list__item">400 GB Bandwith</li>
             <li class="card--pricing__list__item">1 GB Ram</li>
             <li class="card--pricing__list__item">5 E-mail Accounts</li>
             <li class="card--pricing__list__item">24/7Support</li>
@@ -196,14 +221,14 @@
         <div class="card card--pricing slide ">
           <div class="card__head">
             <h3 class="card__title card__title--white card__title--large">
-              Basic
+              Premium
             </h3>
           </div>
-          <h3 class="card__title card--pricing__title">$20/ month</h3>
+          <h3 class="card__title card--pricing__title">$50/ month</h3>
           <ul class="card--pricing__list">
-            <li class="card--pricing__list__item">20 GBBandwith</li>
-            <li class="card--pricing__list__item">1 GB Ram</li>
-            <li class="card--pricing__list__item">5 E-mail Accounts</li>
+            <li class="card--pricing__list__item">5 TB Bandwith</li>
+            <li class="card--pricing__list__item">8 GB Ram</li>
+            <li class="card--pricing__list__item">2000 E-mail Accounts</li>
             <li class="card--pricing__list__item">24/7Support</li>
             <li class="card--pricing__list__item">Control Panel</li>
           </ul>
@@ -215,14 +240,14 @@
         <div class="card card--pricing slide ">
           <div class="card__head">
             <h3 class="card__title card__title--white card__title--large">
-              Basic
+              Standart
             </h3>
           </div>
-          <h3 class="card__title card--pricing__title">$20/ month</h3>
+          <h3 class="card__title card--pricing__title">$30/ month</h3>
           <ul class="card--pricing__list">
-            <li class="card--pricing__list__item">20 GBBandwith</li>
-            <li class="card--pricing__list__item">1 GB Ram</li>
-            <li class="card--pricing__list__item">5 E-mail Accounts</li>
+            <li class="card--pricing__list__item">2 TB Bandwith</li>
+            <li class="card--pricing__list__item">4 GB Ram</li>
+            <li class="card--pricing__list__item">500 E-mail Accounts</li>
             <li class="card--pricing__list__item">24/7Support</li>
             <li class="card--pricing__list__item">Control Panel</li>
           </ul>
@@ -372,7 +397,6 @@
           <li class="footer__list__item"><a href="">About Us</a></li>
           <li class="footer__list__item"><a href="">Meet The Team</a></li>
           <li class="footer__list__item"><a href="">Testemonials</a></li>
-   
         </ul>
       </div>
       <div class="footer__item slide">

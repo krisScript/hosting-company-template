@@ -51,7 +51,7 @@
         justify-content: space-between;
         list-style: none;
         &__item {
-          a {
+          a{
             text-decoration: none;
             font-size: 1rem;
             color: var(--nav);
@@ -62,7 +62,18 @@
               width: 0;
               height: 2px;
               background: var(--nav);
-              transition: width 0.3s;
+              transition: width 300ms;
+            }
+            &.active{
+              &::after {
+                width: 100%;
+              }
+              &:hover{
+                &::after{
+                  transition: 100ms;
+                  transform: scale(1.1) translateY(0.5rem)
+                }
+              }
             }
             &:hover {
               color: var(--nav);

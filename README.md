@@ -1,6 +1,8 @@
 # Hosting Company Template
 
-Build with vanilla and scss
+Build with vanilla and scss.
+Logo provided by [Acme Logos](http://acmelogos.com/)
+.Favicons generated with [realfaviconsgenerator.net](https://realfavicongenerator.net/).
 
 ## Getting Started
 
@@ -12,7 +14,7 @@ You need parcel.js installed on your local machine.
 
 ### Linters
 
-Prettier with  Eslint Integration.
+Prettier with Eslint Integration.
 
 #### Yarn
 
