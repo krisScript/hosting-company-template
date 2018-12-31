@@ -2,7 +2,10 @@ import logoIcon from '../assets/logo/logo-white.svg';
 const fixNav = () => {
   const navContainer = document.querySelector('.header');
   const fixNav = () => {
-    const landingSection = document.querySelector('.landing--section');
+    let landingSection = document.querySelector('.landing--section');
+    if(!landingSection){
+      landingSection = document.querySelector('.section--404')
+    }
     const topOfLanding = landingSection.offsetTop;
     const logo = document.querySelector('.header__logo');
     const windowY = window.scrollY;
@@ -10,7 +13,8 @@ const fixNav = () => {
       logo.firstElementChild.src = logoIcon;
       window.removeEventListener('scroll', fixNav);
       navContainer.classList.add('header--fixed');
-      document.body.style.setProperty('--nav', '#ffffff');
+      const navColor = '#ffffff'
+      document.body.style.setProperty('--nav',navColor);
     }
   };
   window.addEventListener('scroll', fixNav);
